@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+
+/*####################> Home Section Start <################ */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.carosoulecontent {
+  position: absolute !important;
+  bottom: 200px !important;
+  z-index: 1000;
+}
+
+.im1 {
+  width: 10rem;
+  height: auto;
+}
+
+.bg-nav {
+  background-color: #00000047 !important;
+}
+
+.nav-links {
+  color: #ffff !important;
+  font-size: 18px !important;
+  padding: 15px 25px !important;
+  font-family: "Work Sans" !important;
+
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+}
+
+#home {
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  top: 74%;
+
+  background: #fff;
+}
+
+.nav-links2 {
+  color: #ffff !important;
+  font-size: 18px !important;
+  padding: 15px 25px !important;
+  font-family: "Work Sans" !important;
+  text-transform: uppercase !important;
+}
+
+.nav-links::after {
+}
+
+.ul-links {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* align-items: start; */
+
+  list-style: none;
+}
+
+.ul-links-mobile {
+  list-style: none;
+  text-align: center;
+}
+
+.ul-links-mobile li a {
+  color: #fff;
+}
+
+.mobile {
+  background-color: #000000;
+  /* justify-content: center; */
+  align-items: center;
+  /* display: flex; */
+
+  width: 100%;
+}
+
+.ul-links li a {
+  color: #ffff;
+  font-family: "Work Sans";
+}
+
+.cara-image {
+  background-size: cover !important;
+  object-fit: cover !important;
+  width: 100%;
+  height: 100vh !important;
+}
+
+.clarity-head {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 200;
+  font-family: "Raleway";
+}
+
+.contact-btn {
+  background-color: #18a1ab !important;
+  color: #ffff !important;
+  font-size: 20px !important;
+  font-family: "Work Sans";
+  padding: 10px 65px !important;
+}
+
+.contact-btn:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #ffffff !important;
+}
+
+.learn-more {
+  color: #18a1ab !important;
+  font-size: 20px !important;
+  font-family: "Work Sans";
+}
+
+.clarity-para {
+  color: #000;
+  opacity: 0.8;
+  font-family: "Work Sans";
+}
+
+.choose-head {
+  color: #292929;
+  font-weight: 600;
+  font-family: "Work Sans";
+  font-size: 16px;
+}
+
+.services-li li a {
+  opacity: 0.8;
+  font-family: "Work Sans";
+  color: #000;
+}
+
+.carasol-paras {
+  color: #fff;
+  font-family: Raleway, Sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: none;
+  font-family: "Work Sans";
+}
+
+.carasol-head {
+  font-size: 76px;
+  font-family: "Work Sans";
+  color: #fff;
+  z-index: 5;
+}
+
+.menu-1 {
+  background: #18a1ab !important;
+  padding: 10px 15px !important;
+}
+
+.menu-1 li a {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .ul-links {
+    align-items: start;
+  }
+  .carosoulecontent {
+    position: absolute !important;
+    bottom: 100px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .carasol-head {
+    font-size: 40px;
+  }
+
+  .carasol-paras {
+    font-size: 30px;
+  }
+
+  .contact-btn {
+    background-color: #18a1ab !important;
+    color: #ffff !important;
+    font-size: 20px !important;
+    font-family: "Work Sans";
+    padding: 10px 40px !important;
+    width: 100%;
+  }
+}
+
+.gradient-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ); /* Adjust the gradient colors and opacity here */
+  z-index: 1;
+  opacity: 0.9;
+}
+
+/*####################> Home Section End<################ */
+
+.card-container {
+  display: flex; /* Display cards horizontally */
+  justify-content: space-between; /* Space between cards */
+}
+
+.cardmain {
+  height: 270px;
+  perspective: 600px;
+  transition: 0.5s;
+  overflow: hidden !important;
+}
+
+.cardmain:hover .cardmain-front {
+  transform: rotateX(180deg);
+}
+
+.cardmain:hover .cardmain-back {
+  transform: rotateX(0deg);
+}
+
+.cardmain-front {
+  height: 100%;
+  width: 100%;
+
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #00000099;
+  color: #fff;
+  opacity: 0.9;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.7s;
+}
+
+.cardmain-front h3 {
+  /* position: absolute;
+    top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%,-50%); */
+  text-align: center !important;
+  margin-top: 80px;
+  padding: 25px;
+  font-weight: 300 !important;
+}
+.backcontent {
+  text-align: center !important;
+  margin-top: 80px;
+  padding: 25px;
+  font-weight: 300 !important;
+}
+.backcontenttext {
+  font-weight: 600;
+}
+
+.cardmain-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000099;
+  backface-visibility: hidden;
+  transform: rotateX(-180deg);
+  opacity: 0.9;
+  transition: 0.7s;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cardthirdimage1 {
+  background-image: url("../img/services1.jpg");
+
+  background-position: 50% 50%;
+  background-size: cover;
+
+  background-color: #000000;
+  color: #fff;
+
+  backface-visibility: hidden;
+
+  transition: 1s;
+}
+
+.cardthirdimage2 {
+  background-image: url("../img/services2.jpg");
+
+  background-position: 50% 50%;
+  background-size: cover;
+
+  background-color: #000000;
+  color: #fff;
+
+  backface-visibility: hidden;
+
+  transition: 1s;
+}
+
+.cardthirdimage3 {
+  background-image: url("../img/services3.jpg");
+
+  background-position: 50% 50%;
+  background-size: cover;
+
+  background-color: #000000;
+  color: #fff;
+
+  backface-visibility: hidden;
+
+  transition: 1s;
+}
+
+.cardthirdimage4 {
+  background-image: url("../img/services4.jpg");
+
+  background-position: 50% 50%;
+  background-size: cover;
+
+  background-color: #000000;
+  color: #fff;
+
+  backface-visibility: hidden;
+
+  transition: 1s;
+}
+
+/*######################> Third Section Start <################ */
+
+.dr-name {
+  font-size: 37px;
+  font-weight: 300;
+  color: black;
+}
+.button-practice {
+  border: 1px #18a1ab;
+  border-radius: 5px;
+  background: #18a1ab;
+  color: white;
+}
+.book-button button {
+  border: 1px solid #848484;
+  /* border: 1px #70757A; */
+  border-radius: 50%;
+  background: white;
+  font-size: 15px;
+}
+.dr-height img {
+  object-fit: fill;
+  height: 500px !important;
+}
+.our-team {
+  font-weight: 400;
+}
+.btn-custom:hover {
+  background-color: #333437; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+.star {
+  font-size: 30px !important;
+  color: #f7b603;
+  font-weight: 400;
+}
+.star-image img {
+  width: 30px !important;
+}
+.reviews {
+  color: #70757a;
+  font-size: 16px;
+}
+
+.readmorecolor {
+  color: #c36;
+  text-decoration: none;
+  font-weight: 600;
+}
+@keyframes scaleOnce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Scale up to 1.2x size */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.star-image img {
+  animation: scaleOnce 1s ease-in-out; /* Adjust duration and timing as needed */
+}
+
+.hidden-content {
+  display: none;
+}
+.card-image-border img {
+  width: 40px;
+  border: 3px #848484;
+  border-radius: 50%;
+}
+
+.star-image-sundi img {
+  width: 15px;
+}
+
+.cardshadowsetting {
+  box-shadow: 0 0 0 2px rgba(80, 80, 80, 0.7) inset,
+    0 4px 2px 1px rgba(128, 128, 128, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .dr-name {
+    font-size: 30px;
+    text-align: center;
+  }
+  .para,
+  .book-button {
+    text-align: center;
+  }
+  .image-dr img {
+    width: 100% !important;
+  }
+  .margin-bottom {
+    margin-bottom: 30px !important;
+  }
+}
+/*######################> Third Section Start <################ */
+
+/*##################> Footer Start  <##############*/
+
+@import url("https://fonts.googleapis.com/css2?family=ans-serif:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+
+.main-footer {
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+}
+#Main-image {
+  width: 300px !important;
+  cursor: pointer;
+}
+.footer-head {
+  font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+  font-weight: 9;
+  color: black;
+}
+.footer-text {
+  font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+  color: #292929cc;
+  font-size: 18px;
+}
+.main-footer ul li {
+  list-style: none;
+}
+.main-footer ul li a {
+  text-decoration: none;
+}
+.footer-list a {
+  color: #c36;
+}
+.footer-list a:hover {
+  color: rgb(39, 38, 38);
+}
+
+/*---@media--*/
+@media (max-width: 1250px) {
+  #Main-image {
+    width: 200px !important;
+  }
+  .footer-iframe {
+    width: 250px;
+  }
+}
+@media (max-width: 700px) {
+  .footer-head {
+    padding-left: 0px !important;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .footer-iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+/*##################> Footer End  <##############*/
+
+/* #################>About Us Page Start <##################  */
+
+.number {
+  color: #c36;
+  text-decoration: none !important;
+}
+.most-text {
+  font-weight: 300;
+  color: #000000;
+}
+.text-size-dental {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+/* #################>About Us Page End <####################  */
+
+/*#############> financial-options Start <############## */
+
+.most-text {
+  font-weight: 300;
+  color: #000000;
+}
+.text-size-dental {
+  font-size: 14px;
+}
+/*#############> financial-options End <############## */
+
+/* ###################>first-visit  Start <############## */
+.most-text {
+  font-weight: 300;
+  color: #000000;
+}
+
+.text-size-dental {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+.number {
+  color: #c36;
+  text-decoration: none !important;
+}
+
+/* ###################>first-visit End <############## */
+
+
+
+/* ###############>General start<##############*/
+.head{
+    font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 350;
+}
+.para{
+    font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
+    color: rgb(48, 48, 48);
+    font-size: 16px;
+}
+.font-icon{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.head1{
+    font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 38px;
+    font-weight: 350;
+}
+.head2{
+    font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 350;
+}
+.para a{
+    text-decoration: none;
+    color:  #c36;
+}
+@media (max-width:510px) {
+    .head2{
+        font-size: 25px;
+    }
+    .head1{
+        font-size: 30px;
+    }
+    .head{
+        font-size: 30px;
+
+    }
+    
+    
+}
+/* ###############>General End<##############*/
+
+
+/*################> Contact us Start <############# */
+.background{
+    background-color: #18A1AB;
+    object-fit: cover;
+    height: 100vh;
+}
+.contact-text{
+    font-weight: 400;
+    font-size: 50px;
+}
+.teeth img{
+    width: 90px;
+}
+
+.form-input input{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 45px;
+
+}
+.text-form{
+    border: 1px solid black !important; 
+    width: 81% !important;
+}
+.contact-button{
+    border: 1px #555555;
+    border-radius: 27px;
+    font-size: 20px;
+    background-color: #555555;
+    color: white;
+    padding-left: 40px; 
+    padding-right: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.teeth{
+    padding-top: 110px;
+    padding-left: 100px !important;
+}
+.margin-top{
+    margin-top: 100px;
+}
+@media screen and (max-width:768px){
+    .contact-text{
+        font-size: 40px;
+    }   
+    .form-input input{
+        margin-top: 10px;
+    }
+.text-form{
+    width: 100% !important;
+}
+.margin-top{
+    margin-top: 20px;
+}
+.form-input input{
+    width: 100%;
+}
+.teeth{
+    padding-top: 10px;
+    padding-left: 10px !important;
+}
+}
+@media screen and (max-width:400px){
+    
+}
+/*################> Contact us End<################ */
