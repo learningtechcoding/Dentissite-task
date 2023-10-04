@@ -1,0 +1,24 @@
+.sign-color{
+    color: #174B61;
+    font-size: ;
+}
+.lable-font{
+    font-size: 19px;
+    font-weight: 700;
+}
+.form-input input{
+    font-size: 20px;
+    background-color: #F5F5F5;
+}
+.login-button{
+    border: 1px solid #174B61;
+    border-radius: 30px;
+    color: white;
+    background-color: #174B61;
+    font-size: 20px;
+}
+
+.link{
+    color: black;
+    font-weight: 500;
+}
