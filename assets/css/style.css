@@ -671,3 +671,42 @@ a {
     
 }
 /*################> Contact us End<################ */
+
+
+
+/*######################> Login Page Start <############## */
+
+.sign-color{
+    color: #18a1ab !important;
+
+}
+.lable-font{
+    font-size: 19px !important;
+    font-weight: 700 !important;
+}
+.check input{
+    font-size: 20px !important;
+    background-color: #F5F5F5 !important;
+}
+.login-button{
+    border: 1px solid #18a1ab !important;
+    border-radius: 30px !important;
+    color: white !important;
+    background-color: #18a1ab !important;
+    font-size: 20px !important;
+}
+
+.link{
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+.registerlink{
+  color: #18a1ab;
+}
+
+.loginpagesetting{
+  
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); border-radius: 10px;
+}
+/*######################> Login Page End <############## */
